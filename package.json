@@ -2,9 +2,23 @@
   "name": "Janitor",
   "version": "1.0.0",
   "description": "The janitor of Bastion HQ.",
-  "main": "index.js",
+  "main": "./build/index.js",
   "repository": "https://github.com/TheBastionBot/Janitor.git",
   "author": "Sankarsan Kampa",
   "license": "GPL-3.0",
-  "private": true
+  "private": true,
+  "scripts": {
+    "build": "./node_modules/.bin/tsc",
+    "start": "node ."
+  },
+  "devDependencies": {
+    "@types/dotenv": "^6.1.1",
+    "@types/node": "^12.0.7",
+    "tslint": "^5.17.0",
+    "typescript": "^3.5.1"
+  },
+  "dependencies": {
+    "discord.js": "^11.5.1",
+    "dotenv": "^8.0.0"
+  }
 }
