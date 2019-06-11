@@ -1,0 +1,10 @@
+{
+  "name": "Janitor",
+  "version": "1.0.0",
+  "description": "The janitor of Bastion HQ.",
+  "main": "index.js",
+  "repository": "https://github.com/TheBastionBot/Janitor.git",
+  "author": "Sankarsan Kampa",
+  "license": "GPL-3.0",
+  "private": true
+}
