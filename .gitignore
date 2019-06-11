@@ -120,3 +120,10 @@ typings/
 
 # next.js build output
 .next
+
+# Yarn and npm lock files
+yarn.lock
+package-lock.json
+
+# Build directory
+/build
