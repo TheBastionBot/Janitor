@@ -9,6 +9,10 @@ export default async (message: Message) => {
 
     if (message.member && message.member.hasPermission("MANAGE_MESSAGES")) return;
 
+    if (message.content.includes("http") && (message.content.includes("porn") || message.content.includes("sex") || message.content.includes("18+") || message.content.includes("nude") || message.content.includes("naked"))) {
+        if (message.deletable) await message.delete().catch(() => {});
+    }
+    
     if (authorizedChannels.includes(message.channel.id)) {
         if (/^[#!~%]+[a-z0-9]+/.test(message.content)) {
             if (message.deletable) await message.delete().catch(() => {});
